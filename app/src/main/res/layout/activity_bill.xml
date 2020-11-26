@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_color"
+    tools:context=".BillActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/layoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/light_circle_bg">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_back_ripple"
+                android:paddingStart="6dp"
+                android:src="@drawable/ic_baseline_arrow_back_ios_24"
+                android:tint="@color/colorPrimaryDark" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo" />
+
+    </RelativeLayout>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:layout_below="@+id/layoutTop"
+        android:layout_above="@id/layoutBottom"
+        android:layout_margin="4dp"
+        android:layout_marginBottom="16dp"
+        android:padding="4dp"
+        >
+
+        <TableRow
+            android:weightSum="3"
+            android:layout_width="match_parent"
+            >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/table_border_doted"
+                android:padding="8dp"
+                android:text="text"
+                android:src="@drawable/logo"
+                android:textAlignment="center"
+                app:tint="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:fontFamily="@font/arabic_bold"
+                android:background="@drawable/table_border_doted"
+                android:text="21-10-2020" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:fontFamily="@font/arabic_bold"
+                android:background="@drawable/table_border_doted"
+                android:text="رقم° 887996540000541" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:background="@drawable/table_border_doted"
+                android:fontFamily="@font/arabic_bold"
+                android:text="بون رقم° 00000000001" />
+
+        </TableRow>
+
+        <TableRow
+            android:weightSum="3"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:textAlignment="center"
+                android:fontFamily="@font/arabic_bold"
+                android:background="@drawable/table_border_doted"
+                android:text="24 درهم" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:fontFamily="@font/arabic_bold"
+                android:background="@drawable/table_border_doted"
+                android:text="كمية" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:fontFamily="@font/arabic_bold"
+                android:background="@drawable/table_border_doted"
+                android:text="اسم المنتوج" />
+        </TableRow>
+
+        <TableRow
+            android:weightSum="3"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:fontFamily="@font/arabic_bold"
+                android:background="@drawable/table_border_doted"
+                android:text="24 درهم" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:fontFamily="@font/arabic_bold"
+                android:background="@drawable/table_border_doted"
+                android:text="" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:textAlignment="center"
+                android:fontFamily="@font/arabic_bold"
+                android:background="@drawable/table_border_doted"
+                android:text="SIDI ALI 33 CL" />
+        </TableRow>
+
+        <TableRow
+            android:weightSum="3"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:fontFamily="@font/arabic_bold"
+                android:background="@drawable/table_border_doted"
+                android:text="24 درهم" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:fontFamily="@font/arabic_bold"
+                android:background="@drawable/table_border_doted"
+                android:text="" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:background="@drawable/table_border_doted"
+                android:fontFamily="@font/arabic_bold"
+                android:text="SIDI ALI 33 CL" />
+        </TableRow>
+
+        <TableRow
+            android:layout_height="200dp"
+            android:layout_width="match_parent"
+            >
+
+            <TextView
+                android:layout_height="150dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/table_border_doted"
+                />
+
+        </TableRow>
+
+
+        <TableRow
+            >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:fontFamily="@font/arabic_bold"
+                android:background="@drawable/table_border_doted"
+                android:text="24 درهم" />
+
+
+        </TableRow>
+
+
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="24dp"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+            android:background="@drawable/btn_grey"
+            android:drawableEnd="@drawable/ic_printer"
+            android:drawableTint="@color/colorPrimaryDark"
+            android:fontFamily="@font/arabic_bold"
+            android:paddingStart="40dp"
+            android:paddingEnd="32dp"
+            android:text="ملومات الاختیہ"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/btn_grey"
+            android:drawableEnd="@drawable/ic_save"
+            android:drawableTint="@color/colorPrimaryDark"
+            android:fontFamily="@font/arabic_bold"
+            android:paddingStart="40dp"
+            android:paddingEnd="32dp"
+            android:text="ملومات الاختیہ"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

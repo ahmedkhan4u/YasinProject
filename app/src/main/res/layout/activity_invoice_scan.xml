@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@drawable/bg_color"
+    tools:context=".InvoiceScanActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:elevation="8dp"
+        android:background="@drawable/toolbar_green"
+        >
+
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/btn_back_ripple"
+            android:src="@drawable/ic_menu"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":رقم البون 0000000001"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/arabic_bold"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/bottom_round_corners"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="56dp"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.6"
+                android:onClick="ButonClick"
+                android:background="@drawable/top_bg_dark" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="8dp"
+                    android:layout_marginTop="24dp"
+                    android:id="@+id/writeCode"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/editText3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="24dp"
+                        android:backgroundTint="@android:color/white"
+                        android:hint="الاسم الكامل"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/light_blue"
+                        android:textColorHint="@color/light_blue"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView"
+                        app:layout_constraintVertical_bias="0.0"
+                        android:layoutDirection="rtl"
+                        android:drawableRight="@drawable/ic_read_code"
+                        android:drawableTint="@android:color/white"
+                        android:drawablePadding="10dp"
+                        tools:layout_editor_absoluteX="24dp"
+                        android:fontFamily="@font/arabic_light"
+                        android:scrollHorizontally="true"
+                        android:ellipsize="end"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        />
+
+                    <Button
+                        android:layout_width="200dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="40dp"
+                        android:background="@drawable/btn_grey"
+                        android:layout_marginHorizontal="32dp"
+                        android:text="ملومات الاختیہ"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:drawableTint="@color/colorPrimaryDark"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/arabic_bold"
+                        android:textSize="18sp"
+                        />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/scanner"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="4dp"
+                    android:layout_above="@+id/btnSlide"
+                    >
+
+
+
+                    <ImageButton
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_flash"
+                        android:background="@drawable/btn_back_ripple"
+                        />
+
+                    <ImageButton
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="32dp"
+                        android:background="@drawable/btn_back_ripple"
+                        android:src="@drawable/ic_focus_camera" />
+
+                    <ImageButton
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_camera"
+                        android:background="@drawable/btn_back_ripple"
+                        android:layout_marginStart="32dp"
+                        />
+
+                </LinearLayout>
+
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/btnSlide"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    app:track="@drawable/custom_track"
+                    android:textColor="@android:color/white"
+                    android:layout_alignParentBottom="true"
+                    android:thumb="@drawable/custom_thumb"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="80dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.4"
+                android:elevation="10dp"
+                >
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="32dp"
+                    android:layout_weight="1" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_bottom"
+        android:clickable="true"
+        android:onClick="ButtonClick"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5.555 درهم "
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:fontFamily="@font/arabic_bold"
+            android:textColor="@android:color/white"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_forward_multiple"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/bottom_sheet_bg"
+    >
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="24dp"
+        android:background="@drawable/btn_primary"
+        android:drawableEnd="@drawable/ic_printer"
+        android:fontFamily="@font/arabic_bold"
+        android:text="انهاء العملية و طبع"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="24dp"
+        android:background="@drawable/btn_primary"
+        android:drawableEnd="@drawable/ic_pay_money"
+        android:fontFamily="@font/arabic_bold"
+        android:text="تسجيل كريدي جديد"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="24dp"
+        android:background="@drawable/btn_red_color"
+        android:drawableEnd="@drawable/ic_delete"
+        android:fontFamily="@font/arabic_bold"
+        android:text="مسح العملية"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:textStyle="bold"
+        />
+
+
+
+
+</LinearLayout>

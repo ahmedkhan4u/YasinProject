@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="4dp"
+    android:background="@drawable/product_info_dialog"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="التفاصيل"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:padding="8dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/arabic_bold"
+        android:drawableEnd="@drawable/ic_info"
+        android:drawablePadding="16dp"
+        android:drawableTint="@android:color/white"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="@drawable/bottom_round_light"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="اسم المنتوج: "
+            android:textColor="@color/colorPrimary"
+            android:padding="2dp"
+            android:textSize="16sp"
+            android:fontFamily="@font/arabic_light"
+            android:drawablePadding="16dp"
+            android:drawableTint="@android:color/white"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SIDI ALI 33CL"
+            android:textColor="@color/colorPrimary"
+            android:padding="2dp"
+            android:fontFamily="@font/arabic_bold"
+            android:drawablePadding="16dp"
+            android:drawableTint="@android:color/white"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="الشركة: "
+            android:textColor="@color/colorPrimary"
+            android:padding="2dp"
+            android:textSize="16sp"
+            android:fontFamily="@font/arabic_light"
+            android:drawablePadding="16dp"
+            android:drawableTint="@android:color/white"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SIDI ALI 33CL"
+            android:textColor="@color/colorPrimary"
+            android:padding="2dp"
+            android:fontFamily="@font/arabic_bold"
+            android:drawablePadding="16dp"
+            android:drawableTint="@android:color/white"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="الثمن و الوحدة:"
+            android:textColor="@color/colorPrimary"
+            android:padding="2dp"
+            android:textSize="16sp"
+            android:fontFamily="@font/arabic_light"
+            android:drawablePadding="16dp"
+            android:drawableTint="@android:color/white"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="درهم حبة"
+            android:textColor="@color/colorPrimary"
+            android:padding="2dp"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:drawablePadding="16dp"
+            android:drawableStart="@drawable/ic_edit"
+            android:fontFamily="@font/arabic_bold"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="الثمن و الوحدة:"
+            android:textColor="@color/colorPrimary"
+            android:padding="2dp"
+            android:textSize="16sp"
+            android:fontFamily="@font/arabic_light"
+            android:drawablePadding="16dp"
+            android:drawableTint="@android:color/white"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="الشركة: "
+            android:textColor="@color/colorPrimary"
+            android:padding="2dp"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:fontFamily="@font/arabic_bold"
+            android:textStyle="bold"
+            android:drawableTint="@color/orange_color"
+            android:drawablePadding="16dp"
+            android:drawableStart="@drawable/ic_info"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="الثمن و الوحدة:"
+            android:textColor="@color/colorPrimary"
+            android:padding="2dp"
+            android:textSize="16sp"
+            android:drawablePadding="16dp"
+            android:fontFamily="@font/arabic_light"
+            android:drawableTint="@android:color/white"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="32dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/product_info_dialog"
+            >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:id="@+id/recyclerViewProducts"
+                >
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

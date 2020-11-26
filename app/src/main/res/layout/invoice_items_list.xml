@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="8dp"
+    android:elevation="4dp"
+    android:layout_margin="4dp"
+    android:padding="8dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:gravity="center"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18"
+                android:textColor="@android:color/black"
+                android:textSize="22sp"
+                android:textAlignment="center"
+                android:fontFamily="@font/arabic_bold"
+                android:id="@+id/number"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" د.م"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:fontFamily="@font/arabic_light"
+                android:textAlignment="center"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/view_color"
+            android:layout_marginVertical="8dp"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="2dp"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/orange_bg"
+                    android:text="+"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:clickable="true"
+                    android:id="@+id/btnAdd1"
+                    />
+
+                <TextView
+                    android:layout_width="32dp"
+                    android:layout_height="wrap_content"
+                    android:text="0\nحبة"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/arabic_bold"
+                    android:textColor="@android:color/black"
+                    android:textAlignment="center"
+                    android:id="@+id/txtAddSubText1"
+                    />
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/orange_bg"
+                    android:text="-"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:clickable="true"
+                    android:id="@+id/btnSub1"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:background="@drawable/orange_bg"
+                    android:text="+"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:clickable="true"
+                    android:id="@+id/btnAdd2"
+                    />
+
+                <TextView
+                    android:layout_width="32dp"
+                    android:layout_height="wrap_content"
+                    android:text="0\nحبة"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/arabic_bold"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/txtAddSubText2"
+                    />
+
+                <TextView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:background="@drawable/orange_bg"
+                    android:text="-"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:clickable="true"
+                    android:id="@+id/btnSub2"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="8dp"
+            android:background="@drawable/view_color"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="2dp"
+            android:id="@+id/lyoutShowDialog"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Muhammad Ahmed"
+                android:textSize="14sp"
+                android:fontFamily="@font/arabic_bold"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="13 د.م"
+                android:fontFamily="@font/arabic_light"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Milk"
+                android:gravity="end"
+                android:fontFamily="@font/arabic_light"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
